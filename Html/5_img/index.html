@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Examples</title>
+  </head>
+  <body>
+    <!-- Example 1: Using an Image from the Web -->
+    <img
+      src="https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg"   
+      title="camera lense" 
+      width="1000"
+      alt="A Camera Lens"
+    />
+    <!-- 
+        This <img> element displays an image sourced from the web. 
+        The 'src' attribute specifies the URL of the image.
+        The 'alt' attribute provides a description for the image.
+    -->
+
+    <!-- Example 2: Using an Image from Your Local Files -->
+    <img 
+      src="img/im1.jpg"
+      width="1000" 
+      alt="A Girl With her Camera" />
+    <!-- 
+        This <img> element displays an image stored locally in the 'img' directory.
+        The 'src' attribute specifies the relative path to the image file.
+        The 'alt' attribute provides a description for the image.
+    -->
+
+    <!-- Explanation: -->
+    <!-- 
+        The 'src' attribute stands for "source" and is used to specify the location (URL or path) of the image file.
+        The 'alt' attribute stands for "alternative text" and is used to provide a description of the image. 
+        This text is displayed if the image cannot be loaded, aiding accessibility and providing context.
+        Make sure to use meaningful 'alt' text to describe the content and purpose of the image.
+        
+    -->
+
+    <!-- Example 3: Using the 'title' Attribute for Image Tooltip -->
+    <img 
+      src="img/logo.webp" 
+      title="This is My Logo" 
+      width="1000"
+      alt="Company Logo" />
+    <!-- 
+        This <img> element displays an image of a company logo.
+        The 'src' attribute specifies the relative path to the image file.
+        The 'alt' attribute provides alternative text for the image.
+        The 'title' attribute adds a tooltip that displays when the user hovers over the image.
+        The 'title' attribute is a global attribute and can be used with various HTML elements to provide additional information.
+        In this case, the tooltip informs users that the image represents the company logo.
+    -->
+
+    <!-- Explanation: -->
+    <!-- 
+        The 'title' attribute provides supplementary information about an element when the user interacts with it. 
+        It's often used for tooltips, which are small pop-up boxes that appear when the user hovers over the element.
+        While the 'alt' attribute is essential for accessibility (screen readers for visually impaired users), 
+        the 'title' attribute is more for enhancing the user experience.
+        Remember that the 'title' attribute content is displayed as a tooltip only when the user hovers over the element.
+    -->
+  </body>
+</html>

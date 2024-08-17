@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Example</title>
+</head>
+<body>
+    <img
+      src="img/queue.jpg"
+      width="400"
+      title="A Queue Line"
+      alt="Queue Line"
+    />
+
+    <!-- A line break (<br>) is used here to position the audio player below the photo. -->
+    <br>
+
+    <!-- The audio player with multiple sources -->
+    <audio controls loop>
+      <source src="audio/quran.mp3" type="audio/mpeg" />
+      <source src="audio/quran.wav" type="audio/wav" />
+      <source src="audio/quran.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio> 
+    <!-- 
+    The <audio> element allows you to embed audio content in your web page.
+    The 'controls' attribute adds audio controls (play, pause, volume, etc.) to the audio player.
+    The 'loop' attribute makes the audio loop continuously when it finishes playing.
+    The <source> elements specify different audio file formats and types for better browser compatibility.
+    The text "Your browser does not support the audio element." is displayed when the browser doesn't support audio playback.
+-->
+
+  <!-- A line break (<br>) is used here to position the audio player below the photo. -->
+  <br>
+  
+  <!-- The audio player with 'muted' and 'title' attributes -->
+  <audio controls loop muted title="SMS Ringtone">
+      <source src="audio/sms.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio> 
+    <!-- 
+    The 'muted' attribute mutes the audio player, preventing sound from being heard by default.
+    The 'title' attribute provides a tooltip when the user hovers over the audio player, offering a description.
+    The <source> element specifies the audio file to be played and its type.
+    The text "Your browser does not support the audio element." is displayed when the browser doesn't support audio playback.
+-->
+</body>
+</html>
