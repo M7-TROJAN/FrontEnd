@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Links Example</title>
+</head>
+<body>
+
+  <!-- Basic Link -->
+  <h2>Basic Link</h2>
+  <a href="https://www.google.com" target="_blank">Visit Google Website</a>
+  <!-- 
+    The <a> element creates a hyperlink.
+    The 'href' attribute specifies the target URL. 'href' stands for hypertext reference
+    The 'target' attribute determines where the link will open:
+    - '_self' (default): Opens in the same tab or window.
+    - '_blank': Opens in a new tab or window.
+  -->
+
+  <hr> <!-- line to separate -->
+
+  <!-- Internal Link to Another Page -->
+  <h2>Internal Link to Another Page</h2>
+  <a href="test.html">Go to Test Page</a>
+  <!-- You can create links to other pages within your website using relative URLs. -->
+
+  <hr> <!-- line to separate -->
+
+  <!-- Link with Text and Image -->
+  <h2>Link with Text and Image</h2>
+  <a href="https://www.example.com">
+    <img src="img/logo.webp" alt="Example Logo" width="200" title="Company Logo">
+    <br>
+    Visit Example Website
+  </a>
+  <!-- You can combine text and images within the <a> element to create a linked image. -->
+
+  <hr> <!-- line to separate -->
+
+  <!-- Link to an Email Address -->
+  <h2>Link to an Email Address</h2>
+  <a href="mailto:info@example.com">Contact Us</a>
+  <!-- The 'mailto' scheme allows you to create links to email addresses. -->
+  
+  <hr> <!-- line to separate -->
+
+  <!-- Link to a Phone Number (Mobile Devices) -->
+  <h2>Link to a Phone Number (Mobile Devices)</h2>
+  <a href="tel:+1234567890">Call Us</a>
+  <!-- The 'tel' scheme creates links that allow users to initiate phone calls on mobile devices. -->
+  
+  <hr> <!-- line to separate -->
+
+  <!-- Link to a File -->
+  <h2>Link to a File</h2>
+  <a href="documents/document.pdf" download>Download PDF</a>
+  <!-- The 'download' attribute prompts the user to download the linked file. -->
+  
+  <hr> <!-- line to separate -->
+  
+  <!-- Internal Link within the Same Page -->
+  <h2>Internal Link within the Same Page</h2>
+  <p><a href="#section1">Jump to Section 1</a></p>
+  <p><a href="#section2">Jump to Section 2</a></p>
+  <p id="section1">This is Section 1.</p>
+  <p id="section2">This is Section 2.</p>
+  <!-- You can create internal links within the same page using anchor IDs. -->
+
+</body>
+</html>
