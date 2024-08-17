@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio and Video Example</title>
+  </head>
+  <body>
+    <!-- Displaying an image -->
+    <img
+      src="img/queue.jpg"
+      width="400"
+      title="A Queue Line"
+      alt="Queue Line"
+    />
+
+    <!-- A line break (<br>) is used here to position the content below the image. -->
+    <br />
+
+    <!-- Audio player with multiple sources -->
+    <audio controls loop>
+      <source src="audio/quran.mp3" type="audio/mpeg" />
+      <source src="audio/quran.wav" type="audio/wav" />
+      <source src="audio/quran.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- A line break (<br>) is used here to position the content below the audio player. -->
+    <br />
+
+    <!-- Audio player with 'muted' and 'title' attributes -->
+    <audio controls loop muted title="SMS Ringtone">
+      <source src="audio/sms.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- A line break (<br>) is used here to position the content below the audio player. -->
+    <br />
+
+    <!-- Displaying a video from your local directory -->
+    <h2>Local Video Example with Subtitles</h2>
+    <video controls poster="img/im1.jpg" width="400" preload="auto">
+      <source src="vedio/ronaldo1.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+
+      <!-- Adding subtitles using the <track> element -->
+      <track src="vedio/en.vtt" kind="subtitles" label="English" srclang="en" default />
+
+      <!-- Adding another subtitles using the <track> element -->
+      <track src="vedio/ar.vtt" kind="subtitles" label="Arabic" srclang="ar" />
+    </video>
+    <!-- 
+    The <video> element allows you to embed video content in your web page.
+    The 'controls' attribute adds video controls (play, pause, volume, etc.) to the video player.
+    The 'poster' attribute specifies the URL of an image to be displayed as the video's initial frame.
+    The 'width' attribute sets the width of the video player in pixels.
+    The 'preload' attribute determines how the video should be preloaded.
+    The <source> element specifies the video file to be played and its type.
+
+    The <track> element is used to provide subtitles or captions for the video.
+    The 'src' attribute specifies the URL of the subtitle file.
+    The 'kind' attribute indicates the kind of text track (subtitles, captions, etc.).
+    The 'label' attribute provides a label for the text track.
+    The 'srclang' attribute specifies the language of the subtitle.
+    The 'default' attribute indicates that this is the default subtitle track.
+    -->
+
+
+
+    <!-- A line break (<br>) is used here to separate the local video from the YouTube video. -->
+    <br />
+
+    <!-- Displaying a video from YouTube -->
+    <h2>Watch a YouTube Video</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/1WeVMnWqoqA"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <!-- 
+    Syntax:
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+    Replace "YOUR_VIDEO_ID" with the actual ID of the YouTube video you want to embed 
+    This format ensures that you are directly embedding the video player, rather than the entire watch page, into your webpage. 
+    It's a cleaner and more efficient way to embed YouTube videos..
+
+    The <iframe> element allows you to embed external content, such as videos, in your web page.
+    
+    The 'width' and 'height' attributes specify the dimensions of the embedded video player.
+
+    The 'src' attribute contains the URL of the YouTube video to be embedded.
+
+    The 'frameborder' attribute sets whether or not to display a border around the video player.
+
+    The 'allowfullscreen' attribute enables fullscreen mode for the video.
+    -->
+  </body>
+</html>
