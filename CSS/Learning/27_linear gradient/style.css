@@ -1,0 +1,18 @@
+.linear-gradient-example {
+    background: linear-gradient(to right, red, blue);  /* Red transitions to blue from left to right */
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.radial-gradient-example {
+    background: radial-gradient(circle, red, blue);  /* Red transitions to blue in a circular pattern */
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}

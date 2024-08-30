@@ -1,0 +1,16 @@
+.text1 {
+    font-variant: small-caps;
+}
+
+.text2 {
+    text-transform: uppercase;
+}
+
+/*
+    the difference between font-variant and text-transform is that font-variant 
+    will only change the font to small-caps, (uppercase letters)
+    while text-transform will change the font to uppercase, lowercase, or capitalize.
+    and text-transform will change the size of the font while font-variant will not.
+*/
+
+

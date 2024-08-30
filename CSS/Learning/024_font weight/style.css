@@ -1,0 +1,65 @@
+
+.text1 span {
+    font-weight: lighter;
+}
+
+.text2 span {
+    font-weight: bolder;
+}
+
+
+/*
+    font-weight:
+    100 - Thin
+    200 - Extra Light (Ultra Light)
+    300 - Light
+    400 - Normal
+    500 - Medium
+    600 - Semi Bold (Demi Bold)
+    700 - Bold
+    800 - Extra Bold (Ultra Bold)
+    900 - Black (Heavy)
+*/
+
+
+div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    /* we add this to make the font weight visible because the default font-family doesn't support all font weights */
+}
+
+
+.test1 {
+    font-weight: 100; /* Thin */
+}
+
+.test2 {
+    font-weight: 200; /* Extra Light (Ultra Light) */
+}
+
+.test3 {
+    font-weight: 300; /* Light */
+}
+
+.test4 {
+    font-weight: 400; /* Normal */
+}
+
+.test5 {
+    font-weight: 500; /* Medium */
+}
+
+.test6 {
+    font-weight: 600; /* Semi Bold (Demi Bold) */
+}
+
+.test7 {
+    font-weight: 700; /* Bold */
+}
+
+.test8 {
+    font-weight: 800; /* Extra Bold (Ultra Bold) */
+}
+
+.test9 {
+    font-weight: 900; /* Black (Heavy) */
+}

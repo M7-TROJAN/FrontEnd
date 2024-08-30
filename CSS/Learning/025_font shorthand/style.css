@@ -1,0 +1,24 @@
+.p1 {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: fantasy;
+}
+
+.p2 {
+    font: italic small-caps bold 1.2em fantasy;
+}
+
+/* 
+    in this example, the shorthand property font is used to set the 
+    font-style, font-variant, font-weight, font-size, and font-family properties all at once. 
+*/
+
+/* 
+    Note:
+        the font-size and font-family properties are required.
+        if one of the other properties is missing, the default value for that property will be used.
+        but if the font-size or font-family property is missing, the entire declaration will be ignored.
+*/
+

@@ -1,0 +1,31 @@
+
+/* 
+    normal font size => 1em = 16px = 100%
+    h1 => 2em = 32px = 200%
+    h2 => 1.5em = 24px = 150%
+    h3 => 1.17em = 18.72px = 117%
+    h4 => 1em = 16px = 100%
+    h5 => 0.83em = 13.28px = 83%
+    h6 => 0.67em = 10.72px = 67%
+    p => 1em = 16px = 100% 
+*/
+
+.p1 {
+    font-size: 1.5em;
+}
+
+.p2 {
+    font-size: 30px;
+
+}
+
+.p3 {
+    font-size: 120%;
+
+}
+
+.p4 {
+    font-size: 1.2em;
+}
+
+
