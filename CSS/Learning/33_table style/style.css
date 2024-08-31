@@ -1,0 +1,35 @@
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #009879;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse:collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #009879;
+    color: white;
+    text-transform: uppercase;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    color: #009879;
+}

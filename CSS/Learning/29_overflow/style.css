@@ -1,0 +1,24 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: #ff0;
+    border: dotted 5px #000;
+    margin-bottom: 80px;
+}
+
+.default {
+    overflow: visible; /* default value */
+}
+
+.overflow-hidden {
+    overflow: hidden; /* hidden the overflow content */
+}
+
+.overflow-scroll {
+    overflow: scroll; /* make a scroll bar for the overflow content */
+}
+
+.overflow-auto {
+    overflow: auto; /* make a scroll bar for the overflow content if needed */
+}
+

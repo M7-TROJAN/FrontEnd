@@ -1,0 +1,12 @@
+
+ol, ul {
+    list-style-type:circle; 
+    list-style-position: inside; 
+
+    list-style: circle inside; /* shorthand */
+
+}
+
+li {
+    background-color: gold;
+}
