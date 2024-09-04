@@ -1,0 +1,57 @@
+
+h1 {
+    text-align: center;
+    color: rosybrown;
+}
+
+h1::first-letter {
+    font-size: 2em;
+    color: salmon;
+}
+
+h1::after {
+    content: "🌟";
+    color: gold;
+}
+
+h1:hover {
+    font-size: 4em;
+    color: salmon;
+}
+
+.colored-first-line::first-line {
+    color: blue; /* Change this to any color you prefer */
+    font-weight: bold; /* Optionally add other styling like bold */
+}
+
+p.colored-first-line::selection {
+    background-color: red;
+    color: rgb(252, 248, 248);
+}
+
+p.empty {
+    margin: 50px 10px 0px 10px;
+    height: 50px;
+    background: #f68383;
+    position: relative;
+}
+
+p.empty::before {
+    content: '';
+    background-color: #ae0303;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p.empty::after {
+    content: '';
+    background-color: #ae0303;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,82 @@
+/* Pseudo classes */
+
+div {
+    text-align: center; /*horizontal centering*/
+    line-height: 100px; /*vertical centering*/
+    height: 100px;
+    width: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    margin: 100px auto;
+    background-size: cover;
+}
+
+div:hover {
+    background-image: url(image.jpeg); /*change background image on hover*/
+    
+    border: none; /*remove border*/
+
+    color: transparent; /*hide text*/
+}
+
+div:active {
+    background-image: none; /*remove background image on click*/
+    background-color: #000; /*change background color on click*/
+
+    /* make text visible */
+    color: #fff;
+}
+
+div:empty {
+    display:none; /*hide empty div*/
+}
+
+a {
+    padding: 5px; 
+    color: #000; /*set text color to black instead of default blue*/
+    text-decoration: none; /*remove underline*/
+}
+
+a:hover {
+    color: yellow; /*change color of link on hover*/
+}
+
+a:visited {
+    color: #f00; /*change color of visited link*/
+}
+
+a:active {
+    color: #0f0; /*change color of active link*/
+}
+
+a:link {
+    color: #00f; /*change color of unvisited link*/
+}
+
+input[type="text"] {
+    display: block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+input[type="text"]:focus {
+    background: #f00; /*change background color on focus*/
+    outline:#0f0; /*remove outline*/
+}
+
+input[type="email"] {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+input[type="email"]:invalid {
+    background:#f00; /*change background color if invalid*/
+}
+
+input[type="email"]:valid {
+    background:#0f0; /*change background color if valid*/
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Attribute Selectors</h1>
+    <p>Attribute selectors are used to select elements based on the presence of an attribute or the value of an attribute.</p>
+    <p>For example, the following selector selects all input elements with a type attribute value of "text":</p>
+    <pre>
+        input[type="text"] {
+            background-color: yellow;
+        }
+    </pre>
+    <p>Here are some examples of attribute selectors:</p>
+    <ul>
+        <li><a href="https://www.w3schools.com/cssref/sel_attribute_value.asp">[attribute=value]</a></li>
+        <li><a href="https://www.w3schools.com/cssref/sel_attribute_value_contains.asp">[attribute~=value]</a></li>
+        <li><a href="https://www.w3schools.com/cssref/sel_attribute_value_start.asp">[attribute|=value]</a></li>
+        <li><a href="https://www.w3schools.com/cssref/sel_attribute_value_start.asp">[attribute^=value]</a></li>
+        <li><a href="https://www.w3schools.com/cssref/sel_attribute_value_end.asp">[attribute$=value]</a></li>
+        <li><a href="https://www.w3schools.com/cssref/sel_attribute_value_contains.asp">[attribute*=value]</a></li>
+    </ul>
+    <h2>Example</h2>
+    <p>Here is an example of using attribute selectors:</p>
+    <pre>
+        &lt;style&gt;
+            input[type="text"] {
+                background-color: yellow;
+            }
+            input[type="password"] {
+                background-color: lightblue;
+            }
+            input[type="submit"] {
+                background-color: lightgreen;
+            }
+        &lt;/style&gt;
+    </pre>
+    <p>Try changing the type attribute value of the input elements to see the effect of the attribute selectors.</p>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password"><br><br>
+        <input type="submit" value="Submit">
+    </form
+</body>
+</html>

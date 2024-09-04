@@ -1,0 +1,22 @@
+h1:hover + p { /* adjiscent sibling selector (الشقيق المباشر) */
+    color: red;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+/*  ~ it's a general sibling selector (الشقيق العام) */
+h1:hover ~ p {
+    color: red;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* the above code will apply the style to all p elements that are siblings of the h1 element */

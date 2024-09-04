@@ -1,0 +1,58 @@
+/*
+    1- [attribute] {  
+        property: value;
+    }
+
+    2- [attribute="value"] {
+        property: value;
+    }
+
+    3- element[attribute] {
+        property: value;
+    }
+
+    4- element[attribute="value"] {
+        property: value;
+    }
+
+    5- element[attribute="value"][attribute="value"] {
+        property: value;
+    }
+
+    6- [attribute ^= "value"] Selects every element whose attribute value starts with a specified value
+    
+    7- [attribute $= "value"] Selects every element whose attribute value ends with a specified value
+
+    8- [attribute *= "value"] Selects every element whose attribute value contains a specified value
+
+    9- [attribute ~= "value"] Selects every element whose attribute value is a list of space-separated values, one of which is exactly "value"
+
+    10- [attribute |= "value"] Selects every element whose attribute value is exactly "value" or begins with "value-" followed by a hyphen (-)
+
+    11- [attribute = "value" i] Selects every element whose attribute value is exactly "value" i is for case-insensitive  (case-insensitive)
+*/
+
+/* 1- [attribute] */
+a[target] { /* Selects all <a> elements with a target attribute */
+    color: red;
+}
+
+/* 2- [attribute="value"] */
+a[target="_blank"] { /* Selects all <a> elements with a target attribute value equal to "_blank" */
+    color: green;
+}
+
+/* 3- property[attribute] */
+input[type] { /* Selects all <input> elements with a type attribute */
+    background-color: yellow;
+}
+
+/* 4- property[attribute="value"] */
+input[type="text"] { /* Selects all <input> elements with a type attribute value equal to "text" */
+    background-color: pink;
+}
+
+/* 5- property[attribute="value"][attribute="value"] */
+input[type="text"][name="username"] { /* Selects all <input> elements with a type attribute value equal to "text" and a name attribute value equal to "username" */
+    border: 4px dotted black;
+}

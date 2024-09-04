@@ -1,0 +1,47 @@
+/*
+    property   |  value         |   default width         | new line | description  |  
+    display    |  block         |   100% of parent width  | true     | element occupies the entire width of the parent element
+    display    |  inline        |   fit content           | false    | element occupies only the width of the content
+    display    |  inline-block  |   fit content           | false    | element occupies the width of the content and can be styled with margin and padding
+*/
+
+
+/*
+    display block - inline - inline block
+
+    display block -> element occupies the entire width of the parent element
+    display inline -> element occupies only the width of the content
+    display inline-block -> element occupies the width of the content and can be styled with margin and padding
+*/
+
+/* display block */
+div.block {
+    display: block; /* default you can remove this line */
+    background-color: #f1c40f;
+    margin: 10px 0; 
+    padding: 10px;
+    width: 50%;
+    height: 100px;
+}
+
+/* display inline */
+span.inline {
+    display: inline; /* default you can remove this line because this element is inline  */
+    background-color: lightgreen;
+    padding: 5px; /* this will work in top and bottom but will not work in left and right because the element is inline */
+    margin: 5px; /* this will not work in top and bottom but will work in left and right because the element is inline */
+    width: 50%; /* this will not work because the element is inline */
+    height: 50px; /* this will not work because the element is inline */
+}
+
+
+/* display inline-block */
+div.inline-block {
+    display: inline-block; /* this will make the element inline-block instead of block */
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px; /* this will work because the element is inline-block */
+    margin-right: 10px; /* this will work because the element is inline-block */
+    width: 20%; /* this will work because the element is inline-block */
+    height: 50px; /* this will work because the element is inline-block */
+}

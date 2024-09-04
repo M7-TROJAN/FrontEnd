@@ -1,0 +1,97 @@
+
+/*
+    translate() -> move the element from its current position along the X and Y axis.
+    translate( tx, ty )  -> move the element from its current position along the X and Y axis by tx and ty pixels.
+    translate( tx ) == translate( tx, 0 )
+
+    to move the element to the right you have to use positive values for tx
+    to move the element to the left you have to use negative values for tx
+    to move the element down you have to use positive values for ty
+    to move the element up you have to use negative values for ty
+*/
+
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transform: translate(300px, 100px); /* move the element 300px to the right and 100px down */
+}
+
+/*
+    scale -> increase or decrease the size of the element
+    scale( sx, sy ) -> increase or decrease the size of the element by sx and sy
+    scaleX( sx ) == scale( sx, 1 )  -> increase or decrease the size of the element by sx on the X axis
+    scaleY( sy ) == scale( 1, sy )  -> increase or decrease the size of the element by sy on the Y axis   
+
+    to increase the size of the element you have to use values greater than 1 for sx and sy for example 1.5
+    to decrease the size of the element you have to use values less than 1 for sx and sy for example 0.5
+*/
+
+.box2 {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    transform: scale(1.5, 0.5); /* increase the size of the element by 150% on the X axis and decrease the size of the element by 50% on the Y axis */
+}
+
+/*
+    rotate -> rotate the element
+    rotate( angle ) -> rotate the element by angle degrees
+
+    to rotate the element clockwise you have to use positive values for angle
+    to rotate the element counterclockwise you have to use negative values for angle
+
+    the rotation point is the center of the element by default
+*/
+
+.box3 {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    transform: rotate(45deg); /* rotate the element by 45 degrees */
+}
+
+/*
+    skew -> skew the element
+    skew( ax, ay ) -> skew the element by ax and ay degrees
+    skew( ax ) == skew( ax, 0 )
+
+    to skew the element to the right you have to use positive values for ax
+    to skew the element to the left you have to use negative values for ax
+    to skew the element down you have to use positive values for ay
+    to skew the element up you have to use negative values for ay
+*/
+
+.box4 {
+    margin: 50px; 
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    transform: skew(30deg, 20deg); /* skew the element by 30 degrees on the X axis and 20 degrees on the Y axis */
+}
+
+
+/*
+    matrix -> combine all the transformations
+    matrix(scaleX, skewY, skewX, scaleY, translateX, translateY) -> combine all the transformations
+    matrix(1, 0, 0, 1, 0, 0) == matrix() == the default values -> do nothing 
+
+    scaleX -> increase or decrease the size of the element on the X axis
+    skewY -> skew the element on the Y axis
+    skewX -> skew the element on the X axis
+    scaleY -> increase or decrease the size of the element on the Y axis
+    translateX -> move the element on the X axis
+    translateY -> move the element on the Y axis
+
+    the matrix function is not recommended to use because it is hard to understand and maintain
+*/
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transform: matrix(1.5, 0, 0, 0.5, 300, 100); /* increase the size of the element by 150% on the X axis, decrease the size of the element by 50% on the Y axis, move the element 300px to the right and 100px down */
+}

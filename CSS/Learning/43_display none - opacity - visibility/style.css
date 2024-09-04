@@ -1,0 +1,39 @@
+/*
+    display none - opacity - visibility
+
+    display none -> hides the element and the space it occupies (يخفي العنصر والمساحة التي يحتلها)
+    opacity -> sets the transparency level for an element (يحدد مستوى الشفافية للعنصر)
+    visibility -> hides the element but the space it occupies is still there (يخفي العنصر ولكن المساحة التي يحتلها لا تزال هناك)
+*/
+
+/* display none */
+div.none {
+    display: none; /* hides the element and the space it occupies */
+    background-color: #f1c40f;
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+    height: 100px;
+}
+
+/* opacity */
+div.opacity {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    width: 20%;
+    height: 50px;
+    opacity: 0.5; /* sets the transparency level for an element */
+}
+
+/* visibility */
+div.visibility {
+    visibility: hidden; /* hides the element but the space it occupies is still there */
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    width: 20%;
+    height: 50px;
+}

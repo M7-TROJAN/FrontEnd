@@ -1,0 +1,86 @@
+/*
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+    animation: mymove 5s linear 2s infinite alternate forwards running; -> this means that the animation will run for 5s with linear timing function and after 2s delay and it will run infinitely in alternate direction and forwards fill-mode and running play-state
+*/
+
+body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars during animation */
+}
+
+
+/* تحديد خصائص العنصر */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 30px;
+
+    text-align: center;
+    line-height: 100px;
+
+    /* تحديد خصائص الحركة */
+    animation-name: mymove; /* name of the animation */
+    animation-duration: 5s; /* duration of the animation */
+    animation-timing-function: linear; /* timing function of the animation */
+    animation-delay: 2s; /* delay of the animation */
+    animation-iteration-count: infinite; /* iteration count of the animation */
+    animation-direction: alternate; /* direction of the animation */
+    animation-fill-mode: forwards; /* fill mode of the animation */
+    animation-play-state: running; /* play state of the animation */
+
+    /* shorthand */
+    animation: mymove 7s linear 2s infinite alternate forwards running;
+}
+
+/* @keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+} */
+
+
+/* تحديد الإطارات الرئيسية للحركة */
+@keyframes mymove {
+    0% {
+        translate: 0 0;
+        background-color: red;
+        rotate: 0deg;
+        scale: 1;
+    }
+    25% {
+        translate: 0px 500px;
+        background-color: green;
+        rotate: 90deg;
+        scale: 1.3;
+    }
+    50% {
+        translate: 500px 500px;
+        background-color: blue;
+        rotate: 180deg;
+        scale: 1.5;
+    }
+    75% {
+        translate: 500px 0;
+        background-color: yellow;
+        rotate: 270deg;
+        scale: 1.7;
+    }
+    100% {
+        translate: 0px 0px;
+        background-color: red;
+        rotate: 360deg;
+        scale: 2;
+    }
+}
+
+
+div:hover {
+    animation-play-state: paused;
+    cursor:pointer; /* شكل الماوس */
+}

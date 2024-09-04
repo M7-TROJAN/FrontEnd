@@ -1,0 +1,64 @@
+.gallery {
+    display: flex;
+    gap: 30px;
+    margin:100px auto;
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 70px;
+    padding: 10px;
+    height: 160px;
+    background: #ffffff;
+    transition: 0.4s case-in-out;
+    flex: 1px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.card:nth-child(1) {
+    background: #B881FF;
+}
+
+.card:nth-child(2) {
+    background: #FF9950;
+}
+
+.card:nth-child(3) {
+    background: #AAEC8A;
+}
+
+.card:nth-child(4) {
+    background: #FFD700;
+}
+
+.card:nth-child(5) {
+    background: #FF69B4;
+}
+
+.card:hover {
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    /*make the p element visible*/
+    p {
+        display: block;
+    }
+}
+
+p {
+    color: #7e5408;
+    margin: 10px;
+    padding: 20px 0px;
+    display: none;
+}
+
+/* .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */

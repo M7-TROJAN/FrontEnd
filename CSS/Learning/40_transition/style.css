@@ -1,0 +1,50 @@
+
+/*
+    transition -> ( الانتقال من حالة إلى حالة أخرى)
+    transition: property duration timing-function delay;
+    transition: background-color 2s ease 1s; -> this means that the background-color will change in 2s with ease timing function and after 1s delay
+
+    transition: all 2s ease; -> this means that all properties will change in 2s with ease timing function
+*/
+
+
+/* .btn {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 2s ease;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: white;
+} */
+
+
+.btn {
+    margin: 100px;
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.2s ease-in, rotate 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: white;
+    scale:1.1;
+    rotate: 10deg;
+}
+
+.btn:active {
+    background-color: red;
+    color: white;
+    scale: 1;
+    rotate: -20deg;
+}
