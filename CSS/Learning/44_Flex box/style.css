@@ -1,0 +1,104 @@
+
+
+/* 1.1. Flex Container */
+.flex-parent {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap; /* shorthand for flex-direction and flex-wrap */ 
+
+    justify-content: space-around; /* align items horizontally */
+    align-items: center; /* align items vertically */
+    align-content: space-between; /* align lines when there is extra space in the cross-axis */
+}
+
+/*
+    Notes:
+    - flex-direction: row | row-reverse | column | column-reverse;
+    - flex-wrap: nowrap | wrap | wrap-reverse;
+    - justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    - align-items: stretch | flex-start | flex-end | center | baseline;
+    - align-content: stretch | flex-start | flex-end | center | space-between | space-around;
+    - gap: <length> | <percentage>;  gap between flex items (not supported in IE (Internet Explorer )) use margin instead
+
+    - flex-flow: <flex-direction> <flex-wrap>;
+
+    if flex-direction is row: 
+        - justify-content works on the main axis (horizontally) the x-axis
+        - align-items works on the cross axis (vertically) the y-axis
+        - align-content works on the cross axis (vertically) the y-axis
+    
+    if flex-direction is column:
+        - justify-content works on the cross axis (vertically) the y-axis
+        - align-items works on the main axis (horizontally) the x-axis
+        - align-content works on the main axis (horizontally) the x-axis
+*/
+
+/* 1.2. Flex Items */
+.flex-item {
+    flex-grow: 1; /* grow factor -> grow means how much space the item will take up relative to the other items */
+    flex-shrink: 1; /* shrink factor -> shrink means how much space the item will give up relative to the other items */
+    flex-basis: 200px; /* initial size of the item */
+    
+    flex: 1 1 200px; /* shorthand for flex-grow, flex-shrink, and flex-basis */
+    
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 1.3. Flex Items: Order */
+.flex-item:nth-child(2) {
+    order: 1;
+}
+
+.flex-item:nth-child(3) {
+    order: 2;
+}
+
+.flex-item:nth-child(4) {
+    order: 3;
+}
+
+.flex-item:nth-child(5) {
+    order: 4;
+}
+
+.flex-item:nth-child(6) {
+    order: 5;
+}
+
+
+.flex-item:hover {
+    background-color: #f0f0f0;
+    font-weight: bold; /*make text bold*/
+}
+
+
+/* 
+    Notes:
+    
+    - flex-grow: <number>;  default is 0
+    
+    - flex-shrink: <number>;  default is 1
+
+    - flex-basis: <length> | auto;  default is auto
+
+    - flex: <flex-grow> <flex-shrink> <flex-basis>;  default is 0 1 auto
+    
+    - flex: 1;  means flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+
+    - flex: 0 1 auto;  means flex-grow: 0; flex-shrink: 1; flex-basis: auto;
+
+    - flex: 1 1 auto;  means flex-grow: 1; flex-shrink: 1; flex-basis: auto;
+
+    - flex: 1 1 100px;  means flex-grow: 1; flex-shrink: 1; flex-basis: 100px;
+
+    - order: <number>;  default is 0
+
+    - align-self: auto | flex-start | flex-end | center | baseline | stretch;  default is auto
+*/
