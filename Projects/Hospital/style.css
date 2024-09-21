@@ -913,6 +913,14 @@ p {
         font-size: 25px;
     }
 
+    #info .info-content .col span {
+        font-size: 25px;
+    }
+
+    #info .info-content .col p {
+        font-size: 14px;
+    }
+
     #brand .brand-content {
         justify-content: center;
     }
@@ -924,5 +932,32 @@ p {
     #help .help-content .col:first-child::before, 
     #help .help-content .col:nth-child(2)::before {
         display: none;
+    }
+}
+
+@media (max-width: 390px)
+{
+    #home .navbar nav {
+        min-height: 80px;
+    }
+
+    #home .navbar .logo {
+        width: 120px;
+    }
+
+    #home .navbar nav ul a {
+        margin: 0 3px;
+    }
+
+    #home .main-content .col h1 {
+        font-size: 30px;
+    }
+
+    #home .main-content .col p {
+        font-size: 14px;
+    }
+
+    #home .main-content .col a {
+        margin-bottom: 10px;
     }
 }
