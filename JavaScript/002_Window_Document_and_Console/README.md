@@ -61,6 +61,115 @@ window.open('https://www.google.com', '_blank');
 | `setTimeout()`           | Calls a function after a specified number of milliseconds.                  |
 | `setInterval()`          | Repeats a function at specified intervals (in milliseconds).                |
 
+
+
+### 1. `alert()`
+Displays an alert box with a message to the user.
+
+```javascript
+window.alert("This is an alert message!");
+// or simply
+alert("This is an alert message!");
+```
+
+**Explanation**: The `alert()` method shows a simple message in an alert dialog box. The user must click "OK" to dismiss it.
+
+---
+
+### 2. `prompt()`
+Displays a dialog box prompting the user for input and returns the input value.
+
+```javascript
+let userName = window.prompt("Please enter your name:");
+// or simply
+let userName = prompt("Please enter your name:");
+console.log("User's name is: " + userName);
+```
+
+**Explanation**: The `prompt()` method asks the user for input, returning the value entered. If the user clicks "Cancel", it returns `null`.
+
+---
+
+### 3. `confirm()`
+Displays a dialog box with "OK" and "Cancel" options and returns `true` if the user clicks "OK" and `false` if "Cancel".
+
+```javascript
+let isConfirmed = window.confirm("Are you sure you want to proceed?");
+// or simply
+let isConfirmed = confirm("Are you sure you want to proceed?");
+console.log(isConfirmed ? "User confirmed." : "User canceled.");
+```
+
+**Explanation**: The `confirm()` method asks the user to confirm an action. It returns `true` if the user clicks "OK" and `false` if they click "Cancel".
+
+---
+
+### 4. `innerWidth`
+Returns the width of the window’s content area (viewport) in pixels.
+
+```javascript
+let width = window.innerWidth;
+console.log("Window width is: " + width + "px");
+```
+
+**Explanation**: `innerWidth` gives the width of the browser window's content area excluding toolbars and scrollbars.
+
+---
+
+### 5. `innerHeight`
+Returns the height of the window’s content area (viewport) in pixels.
+
+```javascript
+let height = window.innerHeight;
+console.log("Window height is: " + height + "px");
+```
+
+**Explanation**: `innerHeight` provides the height of the browser window’s content area.
+
+---
+
+### 6. `open()`
+Opens a new browser window or tab.
+
+```javascript
+let newWindow = window.open("https://www.example.com", "_blank", "width=600,height=400");
+```
+
+**Explanation**: The `open()` method opens a new browser window (or tab) with the specified URL. The second parameter (`_blank`) specifies that it should open in a new tab, and additional parameters control the size of the window.
+
+---
+
+### 7. `setTimeout()`
+Calls a function after a specified delay (in milliseconds).
+
+```javascript
+window.setTimeout(function() {
+    console.log("This message is shown after 2 seconds.");
+}, 2000);
+// or simply
+setTimeout(() => console.log("This message is shown after 2 seconds."), 2000);
+```
+
+**Explanation**: The `setTimeout()` method delays the execution of a function by the specified number of milliseconds (2 seconds in this case).
+
+---
+
+### 8. `setInterval()`
+Repeats a function at specified intervals (in milliseconds).
+
+```javascript
+let intervalId = window.setInterval(function() {
+    console.log("This message is shown every 1 second.");
+}, 1000);
+// or simply
+let intervalId = setInterval(() => console.log("This message is shown every 1 second."), 1000);
+
+// To stop the interval
+window.clearInterval(intervalId);
+```
+
+**Explanation**: The `setInterval()` method executes a function repeatedly at the specified time intervals. The `clearInterval()` method is used to stop the repetition.
+
 ---
 
 ## 2. The `document` Object
