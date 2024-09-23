@@ -194,6 +194,74 @@ console.log(person.name);        // Output: Mahmoud
 console.log(person['age']);      // Output: 26
 ```
 
+In JavaScript, both `person.name` and `person['age']` are used to access properties of an object, but they have subtle differences in their usage:
+
+### 1. **Dot Notation (`person.name`)**:
+- **Usage**: You use dot notation when you know the exact name of the property you want to access.
+- **Syntax**: `object.propertyName`
+- **Limitations**: The property name must be a valid identifier (i.e., no spaces, special characters, or numbers at the start).
+
+```javascript
+console.log(person.name); // Mahmoud
+```
+
+Here, `person.name` accesses the `name` property directly, and it's straightforward and easy to read.
+
+### 2. **Bracket Notation (`person['age']`)**:
+- **Usage**: You use bracket notation when you might not know the property name in advance, or if the property name includes spaces or special characters.
+- **Syntax**: `object['propertyName']`
+- **Flexibility**: You can access properties dynamically using variables, special characters, or spaces.
+
+```javascript
+console.log(person['age']); // 26
+```
+
+This accesses the `age` property using the key in brackets, and it allows for more dynamic scenarios where the property name is stored in a variable or contains characters that dot notation doesn’t support.
+
+### Key Differences:
+1. **Static vs. Dynamic Access**:
+   - **Dot Notation**: Used when the property name is known and static (e.g., `person.name`).
+   - **Bracket Notation**: Used when the property name is dynamic or might be stored in a variable (e.g., `person[property]`).
+
+   Example:
+   ```javascript
+   let property = 'age';
+   console.log(person[property]); // 26
+   ```
+
+2. **Handling Special Characters**:
+   - **Dot Notation**: Only works for valid JavaScript identifiers (letters, numbers, underscores, and no spaces).
+   - **Bracket Notation**: Can access properties with special characters or spaces.
+
+   Example:
+   ```javascript
+   let person = {
+     'first name': 'Mahmoud',
+     'is-developer': true
+   };
+
+   // Dot notation won't work here:
+   // console.log(person.first name); // Error!
+
+   // Bracket notation can handle this:
+   console.log(person['first name']); // Mahmoud
+   console.log(person['is-developer']); // true
+   ```
+
+### When to Use Each:
+- **Dot Notation**: Prefer this when you know the property name at design time, and it follows the valid identifier rules. It’s more readable and commonly used.
+  
+- **Bracket Notation**: Use this when the property name is dynamic, has special characters, or spaces. This method is more flexible but may be slightly less readable than dot notation. 
+
+In your example:
+
+```javascript
+console.log(person.name);  // Dot notation
+console.log(person['age']);  // Bracket notation
+```
+
+Both do the same thing here, but `person['age']` allows for dynamic access or handling properties that are not valid identifiers.
+
 ---
 
 ### 2.2 Array
