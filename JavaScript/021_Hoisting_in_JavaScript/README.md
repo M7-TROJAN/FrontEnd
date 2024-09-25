@@ -65,6 +65,15 @@ function sayHello() {
    console.log("Hello!");
 }
 ```
+ يعني JavaScript بتتعامل كأن الكود مكتوب بالشكل ده:
+
+ 
+```js
+function sayHello() {
+   console.log("Hello!");
+}
+sayHello(); // This works fine
+```
 
 ## الخلاصة:
 - مع `var`، بيتم رفع المتغير لكن بدون تعيين القيمة، وبيكون `undefined` لحد ما تعين له قيمة.
