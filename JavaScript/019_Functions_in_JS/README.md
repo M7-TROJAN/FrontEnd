@@ -154,6 +154,81 @@ console.log(sum(1, 2, 3, 4));  // Output: 10
 
 In this example, the `sum` function accepts any number of arguments and adds them all together.
 
+Let’s break down the `sum` function step by step:
+
+#### Function Definition:
+```javascript
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+```
+
+#### 1. **The `...numbers` (Rest Parameter)**:
+- The `...numbers` is a **rest parameter**. It allows the function to accept an **indefinite number of arguments** as an array.
+- So, when you call `sum(1, 2, 3, 4)`, all these values are gathered into the `numbers` array.
+  
+In the example, `numbers` will be: 
+```javascript
+[1, 2, 3, 4]
+```
+
+#### 2. **The `reduce()` Method**:
+- The `reduce()` method is used to reduce the array `numbers` into a single value.
+  
+The general structure of `reduce()` looks like this:
+```javascript
+array.reduce((accumulator, currentValue) => { /* logic */ }, initialValue);
+```
+- **`accumulator`**: Holds the accumulated value (total sum in this case).
+- **`currentValue`**: The current element being processed in the array (each `num`).
+- **`initialValue`**: The initial value for the `accumulator`, which is `0` in this case.
+
+Here’s how it works in the context of this function:
+```javascript
+numbers.reduce((total, num) => total + num, 0);
+```
+
+- **First iteration**:
+  - `total = 0` (the initial value)
+  - `num = 1` (the first element of the array)
+  - The result: `total + num = 0 + 1 = 1`
+
+- **Second iteration**:
+  - `total = 1` (from the previous result)
+  - `num = 2` (the second element of the array)
+  - The result: `1 + 2 = 3`
+
+- **Third iteration**:
+  - `total = 3`
+  - `num = 3`
+  - The result: `3 + 3 = 6`
+
+- **Fourth iteration**:
+  - `total = 6`
+  - `num = 4`
+  - The result: `6 + 4 = 10`
+
+After all iterations, the final accumulated value (sum of all numbers) is `10`.
+
+#### 3. **Returning the Result**:
+- The function returns the final result of `reduce()`, which in this case is `10`.
+
+#### Output:
+
+```javascript
+console.log(sum(1, 2, 3, 4)); // Output: 10
+```
+
+The function call `sum(1, 2, 3, 4)` will:
+1. Collect the numbers `1, 2, 3, 4` into the `numbers` array.
+2. Use `reduce()` to sum them up: `1 + 2 + 3 + 4 = 10`.
+3. Return the result `10`, which is then logged to the console.
+
+#### Summary:
+- **Rest Parameter (`...numbers`)**: Gathers the arguments into an array.
+- **`reduce()`**: Adds up the elements of the array to compute the sum.
+- The result is the total sum of the numbers passed as arguments.
+
 ---
 
 ## 9. Anonymous Functions
