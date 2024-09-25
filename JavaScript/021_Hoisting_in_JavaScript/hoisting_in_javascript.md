@@ -1,7 +1,6 @@
 
 # مفهوم Hoisting في JavaScript
-
-**Hoisting** أو "الرفع" في JavaScript هو مفهوم بيشير للطريقة اللي JavaScript engine بيتعامل بيها مع التصريحات (declarations) داخل الكود قبل ما ينفذ الكود فعليًا.
+ا **Hoisting** او "الرفع" في جافا سكريبت هو مفهوم بيشير للطريقة الي ال "JavaScript engine" بيتعامل بيهاا مع التصريحات "ال (declarations)" داخل الكود قبل ما ينفذ الكود فعليًا.
 
 ## مثال توضيحي:
 
@@ -17,7 +16,7 @@ var x = 10;
 let y = 4;
 ```
 
-قبل تنفيذ الكود، JavaScript بتعمل **hoisting** للتصريحات اللي باستخدام `var` و `let`. يعني JavaScript بتتعامل كأن الكود مكتوب بالشكل ده:
+قبل تنفيذ الكود، JavaScript بتعمل **hoisting** للتصريحات اللي باستخدام `var` و `let` بترفع ال (declaration) بتاعهم لفوق خالص . يعني JavaScript بتتعامل كأن الكود مكتوب بالشكل ده:
 
 ```js
 var x; // Hoisting happens here
@@ -33,7 +32,8 @@ y = 4; // y gets assigned the value 4
 
 ## ملاحظات مهمة:
 
-### 1. Hoisting مع `var`
+### 1. تعامل ال Hoisting مع `var`
+
 في حالة `var`، بيتم رفع المتغير لكن بدون القيمة بتاعته. يعني لو حاولت تطبع قيمة `x` قبل ما تعين لها قيمة، هتلاقيها `undefined`.
 
 #### مثال:
