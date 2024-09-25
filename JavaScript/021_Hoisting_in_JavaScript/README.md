@@ -1,4 +1,4 @@
-ا
+
 # مفهوم Hoisting في JavaScript
 ال **Hoisting** او "الرفع" في جافا سكريبت هو مفهوم بيشير للطريقة الي ال "JavaScript engine" بيتعامل بيهاا مع التصريحات "ال (declarations)" داخل الكود قبل ما ينفذ الكود فعليًا.
 
@@ -53,7 +53,8 @@ console.log(y); // ReferenceError: Cannot access 'y' before initialization
 let y = 4;
 ```
 
-### 3. Hoisting مع الدوال
+ ### 3. تعامل ال Hoisting مع الدوال
+
 بالنسبة للدوال (functions)، بيتم رفع التصريح والتعريف بتاعهم بالكامل لفوق، فممكن تنادي الدالة قبل ما تكتبها في الكود.
 
 #### مثال:
@@ -73,8 +74,7 @@ function sayHello() {
 الهوستينج ممكن يسبب سلوك غير متوقع في الكود، عشان كده بنفضل استخدام `let` و `const` لتجنب المشاكل المحتملة مع `var`.
 
 
-
-
+---
 
 # Hoisting in JavaScript
 
