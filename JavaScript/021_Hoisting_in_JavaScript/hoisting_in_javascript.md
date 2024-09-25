@@ -16,7 +16,7 @@ var x = 10;
 let y = 4;
 ```
 
-قبل تنفيذ الكود، JavaScript بتعمل **hoisting** للتصريحات اللي باستخدام `var` و `let` بترفع ال (declaration) بتاعهم لفوق خالص . يعني JavaScript بتتعامل كأن الكود مكتوب بالشكل ده:
+قبل تنفيذ الكود، JavaScript بتعمل **hoisting** للتصريحات اللي بتستخدام `var` و `let` بترفع ال (declaration) بتاعهم لفوق خالص . يعني JavaScript بتتعامل كأن الكود مكتوب بالشكل ده:
 
 ```js
 var x; // Hoisting happens here
